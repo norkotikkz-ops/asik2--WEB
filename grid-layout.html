@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 2 · Grid page layout — Dastan Abdasim</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a class="navbar__logo" href="index.html">dastan<span>.dev</span></a>
+    <ul class="navbar__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cards.html">Card row</a></li>
+      <li><a href="grid-layout.html" aria-current="page">Grid layout</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="page-head wrap">
+    <span class="eyebrow">Task 2 · CSS Grid</span>
+    <h1>Page layout with grid areas</h1>
+    <p>A small "reading list" dashboard: header across the top, sidebar on the left, main content on the right, footer across the bottom — all named with <code>grid-template-areas</code>.</p>
+  </div>
+
+  <section class="wrap">
+    <div class="dash">
+      <div class="dash__head">
+        <h2 style="font-size:1.1rem;">This week's reading</h2>
+        <span class="eyebrow">4 articles</span>
+      </div>
+
+      <nav class="dash__side">
+        <h3>Collections</h3>
+        <ul>
+          <li><a href="#">All articles</a></li>
+          <li><a href="#">CSS Grid</a></li>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Performance</a></li>
+          <li><a href="#">Archive</a></li>
+        </ul>
+      </nav>
+
+      <div class="dash__main">
+        <article>
+          <h3>Grid areas, explained with a floor plan</h3>
+          <p>Naming regions of a layout before positioning content in them, and why it reads better than counting rows and columns.</p>
+        </article>
+        <article>
+          <h3>When to reach for Flexbox instead of Grid</h3>
+          <p>One axis versus two: a short rule of thumb for choosing between the two layout modules.</p>
+        </article>
+        <article>
+          <h3>Sticky headers without JavaScript</h3>
+          <p>Position: sticky, its containing-block gotchas, and a couple of layouts where it quietly fails.</p>
+        </article>
+        <article>
+          <h3>Auditing a page for keyboard access</h3>
+          <p>A fifteen-minute checklist: focus order, visible focus rings, and skip links.</p>
+        </article>
+      </div>
+
+      <div class="dash__foot">
+        Dastan Abdasim — reading list dashboard, updated weekly.
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2 style="font-size:1rem;color:var(--ink-soft);">How it's built</h2>
+    <p style="max-width:65ch;color:var(--ink-soft);font-size:.92rem;">
+      The <code>.dash</code> container defines <code>grid-template-columns: 220px 1fr</code>,
+      <code>grid-template-rows: auto 1fr auto</code>, and a
+      <code>grid-template-areas</code> string with four named regions. Each child is placed
+      with <code>grid-area</code>, so re-ordering the layout is a one-line change to the
+      area string rather than renumbering rows and columns.
+    </p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Dastan Abdasim — AITU Frontend Development</p>
+    <p><a href="index.html">← Back to overview</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

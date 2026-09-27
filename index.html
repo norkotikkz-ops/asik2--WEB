@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dastan Abdasim — Assignment #2: Flexbox &amp; Grid</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a class="navbar__logo" href="index.html">dastan<span>.dev</span></a>
+    <ul class="navbar__links">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="cards.html">Card row</a></li>
+      <li><a href="grid-layout.html">Grid layout</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero__inner">
+      <div class="hero__text">
+        <span class="eyebrow">AITU · Frontend Development · Assignment #2</span>
+        <h1>Advanced CSS —<br>Flexbox &amp; Grid</h1>
+        <p>Five small layout studies, each built with a different combination of Flexbox and CSS Grid, tied together by one shared navigation bar.</p>
+        <a class="btn" href="#tasks">See the five tasks ↓</a>
+      </div>
+      <div class="hero__grid" aria-hidden="true">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="tasks">
+    <div class="card-row">
+      <article class="card">
+        <div class="card__body">
+          <span class="eyebrow">Task 0 · Flexbox</span>
+          <h3>Navigation bar</h3>
+          <p>The header you're looking at right now — a flex container aligning a logo and a link list on one row.</p>
+          <a class="btn btn--ghost" href="#top">You're here</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__body">
+          <span class="eyebrow">Task 1 · Flexbox</span>
+          <h3>Card row</h3>
+          <p>Three equal-height project cards in a row, with consistent gaps and a hover lift.</p>
+          <a class="btn btn--ghost" href="cards.html">View task →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__body">
+          <span class="eyebrow">Task 2 · Grid</span>
+          <h3>Page layout</h3>
+          <p>A classic header / sidebar / main / footer layout built with named grid areas.</p>
+          <a class="btn btn--ghost" href="grid-layout.html">View task →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__body">
+          <span class="eyebrow">Task 3 · Grid</span>
+          <h3>Image gallery</h3>
+          <p>A nine-tile grid gallery with a caption overlay that appears on hover.</p>
+          <a class="btn btn--ghost" href="gallery.html">View task →</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__body">
+          <span class="eyebrow">Task 4 · Flexbox + Grid</span>
+          <h3>Portfolio page</h3>
+          <p>Grid for the page skeleton, Flexbox inside every card — the two techniques working together.</p>
+          <a class="btn btn--ghost" href="portfolio.html">View task →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Dastan Abdasim — AITU Frontend Development</p>
+    <p>Built with HTML &amp; CSS, no framework.</p>
+  </div>
+</footer>
+
+</body>
+</html>

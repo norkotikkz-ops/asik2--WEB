@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 1 · Card row — Dastan Abdasim</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a class="navbar__logo" href="index.html">dastan<span>.dev</span></a>
+    <ul class="navbar__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cards.html" aria-current="page">Card row</a></li>
+      <li><a href="grid-layout.html">Grid layout</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="page-head wrap">
+    <span class="eyebrow">Task 1 · Flexbox</span>
+    <h1>Card row</h1>
+    <p>Three cards in a flex container: equal height, consistent gaps, and a lift-and-border hover effect.</p>
+  </div>
+
+  <section class="wrap">
+    <div class="card-row">
+      <article class="card">
+        <div class="card__media">
+          <img src="https://picsum.photos/seed/trailmap/640/400" alt="Topographic trail map illustration">
+        </div>
+        <div class="card__body">
+          <h3>Trailmap</h3>
+          <p>A route-planning app for hikers — offline maps, elevation graphs, and shareable GPX tracks.</p>
+          <a class="btn" href="#">View project</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__media">
+          <img src="https://picsum.photos/seed/ledger/640/400" alt="Notebook and pen on a desk">
+        </div>
+        <div class="card__body">
+          <h3>Ledger</h3>
+          <p>A minimal expense tracker built for students — weekly budgets, recurring bills, and CSV export.</p>
+          <a class="btn" href="#">View project</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__media">
+          <img src="https://picsum.photos/seed/nightowl/640/400" alt="City skyline at night">
+        </div>
+        <div class="card__body">
+          <h3>Nightowl</h3>
+          <p>A reading-list companion that tracks pages read and estimates finish dates for your queue.</p>
+          <a class="btn" href="#">View project</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2 style="font-size:1rem;color:var(--ink-soft);">How it's built</h2>
+    <p style="max-width:65ch;color:var(--ink-soft);font-size:.92rem;">
+      <code>.card-row</code> is <code>display: flex</code> with <code>flex-wrap: wrap</code> and a <code>gap</code>.
+      Each <code>.card</code> uses <code>flex: 1 1 260px</code> so the row wraps gracefully on
+      narrow screens, and <code>align-items: stretch</code> (the flex default) keeps every card
+      the same height regardless of how much text it holds.
+    </p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Dastan Abdasim — AITU Frontend Development</p>
+    <p><a href="index.html">← Back to overview</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

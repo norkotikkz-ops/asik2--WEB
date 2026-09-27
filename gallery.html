@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task 3 · Image gallery — Dastan Abdasim</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a class="navbar__logo" href="index.html">dastan<span>.dev</span></a>
+    <ul class="navbar__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cards.html">Card row</a></li>
+      <li><a href="grid-layout.html">Grid layout</a></li>
+      <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="page-head wrap">
+    <span class="eyebrow">Task 3 · CSS Grid</span>
+    <h1>Image gallery</h1>
+    <p>Nine tiles in a three-column grid. Hover (or focus) a tile to reveal its caption.</p>
+  </div>
+
+  <section class="wrap">
+    <div class="gallery">
+      <figure class="gallery__item" tabindex="0">
+        <img src="https://picsum.photos/seed/gallery01/500/375" alt="Mountain ridge at sunrise">
+        <figcaption class="gallery__caption">Kaindy ridge, sunrise</figcaption>
+      </figure>
+      <figure class="gallery__item" tabindex="0">
+        <img src="https://picsum.photos/seed/gallery02/500/375" alt="Steam rising from a coffee cup">
+        <figcaption class="gallery__caption">First brew, 7am</figcaption>
+      </figure>
+      <figure class="gallery__item" tabindex="0">
+        <img src="https://picsum.photos/seed/gallery03/500/375" alt="Rows of bookshelves in a library">
+        <figcaption class="gallery__caption">Library, floor 3</figcaption>
+      </figure>
+      <figure class="gallery__item" tabindex="0">
+        <img src="https://picsum.photos/seed/gallery04/500/375" alt="Close-up of a mechanical keyboard">
+        <figcaption class="gallery__caption">Late-night keyboard</figcaption>
+      </figure>
+      <figure class="gallery__item" tabindex="0">
+        <img src="https://picsum.photos/seed/gallery05/500/375" alt="City street at dusk with lit windows">
+        <figcaption class="gallery__caption">Almaty, dusk</figcaption>
+      </figure>
+      <figure class="gallery__item" tabindex="0">
+        <img src="https://picsum.photos/seed/gallery06/500/375" alt="Notebook covered in handwritten notes">
+        <figcaption class="gallery__caption">Lecture notes, week 4</figcaption>
+      </figure>
+      <figure class="gallery__item" tabindex="0">
+        <img src="https://picsum.photos/seed/gallery07/500/375" alt="Rain on a window pane">
+        <figcaption class="gallery__caption">Rain, dorm window</figcaption>
+      </figure>
+      <figure class="gallery__item" tabindex="0">
+        <img src="https://picsum.photos/seed/gallery08/500/375" alt="Bicycle leaning against a brick wall">
+        <figcaption class="gallery__caption">Commute, day one</figcaption>
+      </figure>
+      <figure class="gallery__item" tabindex="0">
+        <img src="https://picsum.photos/seed/gallery09/500/375" alt="Snow-covered pine trees">
+        <figcaption class="gallery__caption">Burabay, winter</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2 style="font-size:1rem;color:var(--ink-soft);">How it's built</h2>
+    <p style="max-width:65ch;color:var(--ink-soft);font-size:.92rem;">
+      <code>.gallery</code> is <code>display: grid</code> with
+      <code>grid-template-columns: repeat(3, 1fr)</code> and a fixed <code>gap</code>, so every
+      tile stays equal width. Each caption is an absolutely-positioned
+      <code>figcaption</code> that sits at <code>opacity: 0</code> until the tile is hovered
+      or focused, which also makes the effect reachable by keyboard.
+    </p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Dastan Abdasim — AITU Frontend Development</p>
+    <p><a href="index.html">← Back to overview</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
